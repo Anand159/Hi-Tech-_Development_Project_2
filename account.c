@@ -7,7 +7,6 @@ int main()
      account();
     return 0;
 }
-
 void account()
 {
     char account[11];
