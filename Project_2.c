@@ -9,7 +9,6 @@ void name()
 {   
     char name[10];
     printf("Please enter Account holder name : ");
-    scanf("%s",name);
-    printf("Account holder's name is %s",name);
+    scanf("%s",&name);
 
 }
