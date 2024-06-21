@@ -1,50 +1,24 @@
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
+void account();
 
-void accountnumber();
-
-void main()
+int main()
 {
-    accountnumber();
+     account();
+    return 0;
 }
 
-void accountnumber()
-
+void account()
 {
-    char accountNumber[20];
-
+    char account[11];
     while (1)
     {
         printf("Please Enter 11 digit Account Number only: ");
-        scanf("%s", accountNumber);
-
-        if (strlen(accountNumber) == 11)
+        scanf("%s", &account);
+        if (strlen(account) == 11)
         {
-            int isValid = 1;
-
-            for (int i = 0; i < 11; i++)
-            {
-                if (accountNumber[i] < '0' || accountNumber[i] > '9')
-                {
-                    isValid = 0;
-                    break;
-                }
-            }
-
-            if (isValid)
-            {
-                printf(" Account Number: %s\n", accountNumber);
-                break;
-            }
-            else
-            {
-                printf(" Invalid account number.Please try again. \n");
-            }
-        }
-        else
-        {
-            printf("Invalid account number.Please try again. \n");
+            break;
         }
     }
+    
 }
-
