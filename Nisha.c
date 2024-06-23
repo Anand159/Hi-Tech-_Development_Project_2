@@ -3,7 +3,7 @@ void withdraw();
 
 int main()
 {
-    withdrw();
+    withdraw();
 }
 void withdraw()
 {
